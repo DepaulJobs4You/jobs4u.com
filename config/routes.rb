@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'privacy/termsandconditions'
+
   get 'login/userlogin'
 
   get 'congrats/employeecongrats'
