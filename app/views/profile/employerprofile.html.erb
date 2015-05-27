@@ -1,0 +1,148 @@
+<%= link_to "Login", root_path %>
+<a href="/quiz/employeequiz" >Quiz</a>
+<a href="/matches/employeematch" >Matches</a>
+<h1>Company Profile Page</h1>
+<style type="text/css">
+body{
+	color: red;
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background-image: url(../assets/quiz.png);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  }
+ 
+#ProfilePage
+{
+    /* Move it off the top of the page, then centre it horizontally */
+    margin: 50px auto;
+    width: 635px;
+
+/* For visibility. Delete me */
+border: 1px solid red;
+}
+
+#LeftCol
+{
+    /* Move it to the left */
+    float: left;
+
+    width: 200px;
+    text-align: center;
+
+    /* Move it away from the content */
+    margin-right: 20px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Photo
+{
+    /* Width and height of photo container */
+    width: 100px;
+    height: 100px;
+
+
+border: 1px solid green;
+}
+
+#PhotoOptions
+{
+    text-align: center;
+    width: 200px;
+
+/* For visibility. Delete me */
+border: 1px solid brown;
+}
+
+#Info
+{
+    width: 400px;
+    text-align: center;
+
+    /* Move it to the right */
+    float: right;
+
+/* For visibility. Delete me */
+border: 1px solid blue;
+}
+
+#Info strong
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 100px;
+background-color: white;
+/* For visibility. Delete me */
+border: 1px solid orange;
+}
+
+#Info span
+{
+    /* Give it a width */
+    display: inline-block;
+    width: 250px;
+	background-color: white;
+
+/* For visibility. Delete me */
+border: 1px solid purple;
+}
+
+#Photo img {
+width: 199px;
+  
+  }
+</style>
+<div id="ProfilePage">
+    <div id="LeftCol">
+        <div id="Photo">
+		<%= image_tag ("sam.jpg")%>
+			
+		</div>
+        <div id="ProfileOptions">
+        
+        </div>
+    </div>
+
+    <div id="Info">
+        <p>
+            <strong>Name:</strong>
+            <span>Sam</span>
+        </p>
+        <p>
+            <strong>Work Culture:</strong>
+            <span>Team Player</span>
+        </p>
+        <p>
+            <strong>Last employer:</strong>
+            <span>CVS</span>
+        </p>
+        <p>
+            <strong>Top 5 Skills:</strong>
+            <span>1. HTML <br/>2. PHP <br/>3.ROR <br/>4. Project Management <br/>5. Data Analysis</span>
+        </p>
+		<p>
+            <strong>Phone Number:</strong>
+            <span>847-332-3321</span>
+        </p>
+		<p>
+            <strong>Email:</strong>
+            <span>Sam@supernatural.com</span>
+        </p>
+		<p>
+            <strong>City Currently Living:</strong>
+            <span>Chicago</span>
+        </p>
+       
+       
+       
+    </div>
+
+    <!-- Needed because other elements inside ProfilePage have floats -->
+    <div style="clear:both"></div>
+</div>
